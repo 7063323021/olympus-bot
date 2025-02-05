@@ -595,11 +595,3 @@ class Global(commands.Cog):
             await ctx.send(f"✅ | Stopped freezing {member.mention}'s nickname.")
         else:
             await ctx.send(f"❌ | {member.mention}'s nickname is not currently being frozen.")
-
-
-"""
-@Author: Sonu Jana
-    + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
-    + for any queries reach out Community or DM me.
-"""

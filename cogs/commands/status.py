@@ -149,10 +149,3 @@ class Status(commands.Cog):
             elif isinstance(activity, discord.Activity):
                 activity_list.append(f"{activity.type.name.capitalize()} {activity.name}")
         return "\n".join(activity_list) if activity_list else None
-
-"""
-@Author: Sonu Jana
-    + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
-    + for any queries reach out Community or DM me.
-"""

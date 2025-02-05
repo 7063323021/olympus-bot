@@ -13,7 +13,7 @@ from discord.ext import commands
 
 from core import Context
 from core.Cog import Cog
-from core.Olympus import Olympus
+from core.Orizen import Orizen
 from utils.Tools import *
 from utils.config import *
 
@@ -29,7 +29,7 @@ os.environ["JISHAKU_NO_UNDERSCORE"] = "True"
 os.environ["JISHAKU_FORCE_PAGINATOR"] = "True"
 
 
-client = Olympus()
+client = Orizen()
 tree = client.tree
 TOKEN = os.getenv("TOKEN")
 
@@ -39,18 +39,6 @@ TOKEN = os.getenv("TOKEN")
 @client.event
 async def on_ready():
     await client.wait_until_ready()
-    
-    print("""
-           \033[1;35m
-
-        ____   ___  _   _ _   _ 
-       / ___| / _ \| \ | | | | |
-       \___ \| | | |  \| | | | |
-        ___) | |_| | |\  | |_| |
-       |____/ \___/|_| \_| \___/ 
-
-       \033[0m
-           """)
     print("Loaded & Online!")
     print(f"Logged in as: {client.user}")
     print(f"Connected to: {len(client.guilds)} guilds")
@@ -101,7 +89,7 @@ async def on_command_completion(context: commands.Context) -> None:
                     inline=False)
 
                 embed.timestamp = discord.utils.utcnow()
-                embed.set_footer(text="Olympus Development™ ❤️",
+                embed.set_footer(text="Orizen Development™ ❤️",
                                  icon_url=client.user.display_avatar.url)
 
                 

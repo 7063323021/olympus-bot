@@ -115,13 +115,3 @@ async def get_avatar(user):
 
 def setup(bot):
     bot.add_cog(Ship(bot))
-
-
-
-
-"""
-@Author: Sonu Jana
-    + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
-    + for any queries reach out support or DM me.
-"""

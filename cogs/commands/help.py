@@ -4,7 +4,7 @@ from discord import app_commands, Interaction
 from difflib import get_close_matches
 from contextlib import suppress
 from core import Context
-from core.Olympus import Olympus
+from core.Orizen import Orizen
 from core.Cog import Cog
 from utils.Tools import getConfig
 from itertools import chain
@@ -16,7 +16,7 @@ from utils.config import serverLink
 from utils.Tools import *
 
 color = 0x000000
-client = Olympus()
+client = Orizen()
 
 class HelpCommand(commands.HelpCommand):
 
@@ -237,7 +237,7 @@ class HelpCommand(commands.HelpCommand):
 
 class Help(Cog, name="help"):
 
-  def __init__(self, client: Olympus):
+  def __init__(self, client: Orizen):
     self._original_help_command = client.help_command
     attributes = {
       'name':

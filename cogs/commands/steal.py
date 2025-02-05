@@ -182,12 +182,3 @@ class Steal(commands.Cog):
 
         view = StealView(self.bot, ctx, attachments, stickers, emojis)
         await ctx.send(embed=embed, view=view)
-
-
-
-"""
-@Author: Sonu Jana
-    + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
-    + for any queries reach out Community or DM me.
-"""

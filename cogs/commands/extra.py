@@ -14,7 +14,7 @@ from typing import *
 from utils import *
 from utils.config import BotName, serverLink
 from utils import Paginator, DescriptionEmbedPaginator, FieldPagePaginator, TextPaginator
-from core import Cog, Olympus, Context
+from core import Cog, Orizen, Context
 from typing import Optional
 import aiosqlite 
 import asyncio

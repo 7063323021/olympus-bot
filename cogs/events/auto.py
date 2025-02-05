@@ -1,13 +1,13 @@
 import discord
 from discord.utils import *
-from core import Olympus, Cog
+from core import Orizen, Cog
 from utils.Tools import *
 from utils.config import BotName, serverLink
 from discord.ext import commands
 from discord.ui import Button, View
 
 class Autorole(Cog):
-    def __init__(self, bot: Olympus):
+    def __init__(self, bot: Orizen):
         self.bot = bot
 
 

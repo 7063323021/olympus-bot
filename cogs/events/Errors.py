@@ -3,11 +3,11 @@ import json
 import aiosqlite
 from discord.ext import commands
 from utils.config import serverLink
-from core import Olympus, Cog, Context
+from core import Orizen, Cog, Context
 from utils.Tools import get_ignore_data
 
 class Errors(Cog):
-  def __init__(self, client: Olympus):
+  def __init__(self, client: Orizen):
     self.client = client
 
   @commands.Cog.listener()

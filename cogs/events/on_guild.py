@@ -1,5 +1,5 @@
 from discord.ext import commands
-from core import Olympus, Cog
+from core import Orizen, Cog
 import discord
 import logging
 from discord.ui import View, Button, Select
@@ -10,10 +10,10 @@ logging.basicConfig(
     datefmt="%H:%M:%S",
 )
 
-client = Olympus()
+client = Orizen()
 
 class Guild(Cog):
-    def __init__(self, client: Olympus):
+    def __init__(self, client: Orizen):
         self.client = client
 
     @client.event

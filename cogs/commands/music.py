@@ -6,7 +6,7 @@ from discord.ui import Button, View
 import wavelink
 from wavelink.enums import TrackSource
 from utils import Paginator, DescriptionEmbedPaginator
-from core import Cog, Olympus, Context
+from core import Cog, Orizen, Context
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 import io
 import aiohttp
@@ -280,7 +280,7 @@ class MusicControlView(View):
 
 
 class Music(commands.Cog):
-    def __init__(self, client: Olympus):
+    def __init__(self, client: Orizen):
         self.client = client
         self.client.loop.create_task(self.connect_nodes())
         self.client.loop.create_task(self.monitor_inactivity())

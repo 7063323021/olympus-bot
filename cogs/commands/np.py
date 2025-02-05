@@ -527,10 +527,3 @@ class NoPrefix(commands.Cog):
                 role = guild.get_role(1295883122902302771)
                 if role and role in member.roles:
                     await member.remove_roles(role)
-
-"""
-@Author: Sonu Jana
-    + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
-    + for any queries reach out Community or DM me.
-"""

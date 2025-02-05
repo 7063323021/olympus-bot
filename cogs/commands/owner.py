@@ -11,7 +11,7 @@ from typing import Optional
 from utils import Paginator, DescriptionEmbedPaginator, FieldPagePaginator, TextPaginator
 from utils.Tools import *
 from utils.config import OWNER_IDS
-from core import Cog, Olympus, Context
+from core import Cog, Orizen, Context
 import sqlite3
 import os
 import requests

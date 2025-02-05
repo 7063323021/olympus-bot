@@ -9,7 +9,7 @@ class Mention(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.color = 0xdc143c
-        self.bot_name = "Olympus"
+        self.bot_name = "Orizen"
 
     async def is_blacklisted(self, message):
         async with aiosqlite.connect("db/block.db") as db:

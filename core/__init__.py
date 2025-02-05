@@ -1,3 +1,3 @@
-from .Olympus import Olympus
+from .Orizen import Orizen
 from .Context import Context
 from .Cog import Cog

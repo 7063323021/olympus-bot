@@ -1,5 +1,5 @@
 from __future__ import annotations
-from core import Olympus
+from core import Orizen
 from colorama import Fore, Style, init
 
 
@@ -62,19 +62,19 @@ from .events.autoreact import AutoReactListener
 #from .events.topgg import TopGG
 
 ########-------HELP-------########
-from .olympus.antinuke import _antinuke
-from .olympus.extra import _extra
-from .olympus.general import _general
-from .olympus.automod import _automod 
-from .olympus.moderation import _moderation
-from .olympus.music import _music
-from .olympus.fun import _fun
-from .olympus.games import _games
-from .olympus.ignore import _ignore
-from .olympus.server import _server
-from .olympus.voice import _voice 
-from .olympus.welcome import _welcome 
-from .olympus.giveaway import _giveaway
+from .Orizen.antinuke import Antinuke
+from .Orizen.extra import Utility
+from .Orizen.general import General
+from .Orizen.automod import Automod
+from .Orizen.moderation import _moderation
+from .Orizen.music import _music
+from .Orizen.fun import Fun
+from .Orizen.games import Games
+from .Orizen.ignore import _ignore
+from .Orizen.server import _server
+from .Orizen.voice import _voice 
+from .Orizen.welcome import _welcome 
+from .Orizen.giveaway import _giveaway
 
 
 #########ANTINUKE#########
@@ -131,7 +131,7 @@ from .moderation.topcheck import TopCheck
 from .moderation.snipe import Snipe
 
 
-async def setup(bot: Olympus):
+async def setup(bot: Orizen):
   cogs_to_load = [
         Help, General, Moderation, Automod, Welcomer, Fun, Games, Extra,
         Voice, Owner, Customrole, afk, Embed, Media, Ignore,
@@ -189,14 +189,14 @@ async def setup(bot: Olympus):
 
 
 
-  await bot.add_cog(_antinuke(bot))
-  await bot.add_cog(_extra(bot))
-  await bot.add_cog(_general(bot))
-  await bot.add_cog(_automod(bot))  
+  await bot.add_cog(Antinuke(bot))
+  await bot.add_cog(Extra(bot))
+  await bot.add_cog(General(bot))
+  await bot.add_cog(Automod(bot))  
   await bot.add_cog(_moderation(bot))
   await bot.add_cog(_music(bot))
-  await bot.add_cog(_fun(bot))
-  await bot.add_cog(_games(bot))
+  await bot.add_cog(Fun(bot))
+  await bot.add_cog(Games(bot))
   await bot.add_cog(_ignore(bot))
   await bot.add_cog(_server(bot))
   await bot.add_cog(_voice(bot))   

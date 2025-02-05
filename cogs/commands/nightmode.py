@@ -178,10 +178,3 @@ class Nightmode(commands.Cog):
             color=self.color,
             description='Nightmode disabled! Restored Permissions For Manageable Roles.'
         ))
-
-"""
-@Author: Sonu Jana
-    + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
-    + for any queries reach out Community or DM me.
-"""

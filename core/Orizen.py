@@ -22,7 +22,7 @@ extensions: List[str] = [
     "cogs"
 ]
 
-class Olympus(commands.AutoShardedBot):
+class Orizen(commands.AutoShardedBot):
 
     def __init__(self, *arg, **kwargs):
         intents = discord.Intents.all()
@@ -125,5 +125,5 @@ class Olympus(commands.AutoShardedBot):
 
 def setup_bot():
     intents = discord.Intents.all()
-    bot = Olympus(intents=intents)
+    bot = Orizen(intents=intents)
     return bot

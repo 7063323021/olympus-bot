@@ -201,10 +201,3 @@ class Stats(commands.Cog):
 
         await ctx.reply(embed=embed, view=view)
         await processing_message.delete()
-
-"""
-@Author: Sonu Jana
-    + Discord: me.sonu
-    + Community: https://discord.gg/odx (Olympus Development)
-    + for any queries reach out Community or DM me.
-"""
